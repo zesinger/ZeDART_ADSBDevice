@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-GITHUB_USER="VOTRE_COMPTE"
+GITHUB_USER="zesinger"
 REPO="ZeDART_ADSBDevice"
 BRANCH="main"
 
 BASE_PRIMARY="https://raw.githubusercontent.com/${GITHUB_USER}/${REPO}/${BRANCH}"
-BASE_BACKUP="https://VOTRE_SITE/zedart"
 
 DEVICE_SERVER="zedart-device-server.py"
 
@@ -29,14 +28,6 @@ download() {
         ok "${name} downloaded from primary source."
         return
     fi
-
-    info "Primary source failed, trying backup..."
-
-    if curl -fsSL "${BASE_BACKUP}/${name}" -o "$dst"; then
-        ok "${name} downloaded from backup source."
-        return
-    fi
-
     fail "Unable to download ${name}."
 }
 
