@@ -2,7 +2,7 @@
 set -euo pipefail
 
 GITHUB_USER="VOTRE_COMPTE"
-REPO="ZeDART_Device"
+REPO="ZeDART_ADSBDevice"
 BRANCH="main"
 
 BASE_PRIMARY="https://raw.githubusercontent.com/${GITHUB_USER}/${REPO}/${BRANCH}"
