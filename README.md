@@ -19,6 +19,7 @@ Script pour créer le device ADS-B pour ZeDART
   - Vous pouvez désactiver le SSH ainsi que Raspberry Pi Connect
   - Lancez l'écriture
 - Une fois l'écriture terminée, insérez la carte micro SD dans votre Raspberry Pi, connectez-y également la clé RTL-SDR et reliez l'ordinateur au Raspberry Pi via la connexion Ethernet
+- Alimentez votre Raspberry Pi et quand vous avez la main, tapez votre nom d'utilisateur puis votre mot de passe.
 - Connectez un clavier et un écran au Raspberry, tapez `curl -fsSL https://raw.githubusercontent.com/zesinger/ZeDART_ADSBDevice/main/install-zedart.sh | sudo bash`
 - Patientez
 
